@@ -1,0 +1,381 @@
+body {
+
+  margin:0;
+
+  font-family: 'Poppins', sans-serif;
+
+  background: linear-gradient(-45deg,#0f2027,#203a43,#2c5364);
+
+  background-size:400% 400%;
+
+  animation: bg 12s infinite alternate;
+
+  color:white;
+
+  text-align:center;
+  
+@keyframes bg{
+
+  0%{background-position:0% 50%;}
+
+  100%{background-position:100% 50%;}
+
+}
+
+#typing {
+
+  font-family: 'Orbitron', sans-serif;
+
+  font-size: 60px;
+
+  font-weight: 700;
+  
+  margin-bottom: 60px;
+
+  text-align: center;
+
+  background: linear-gradient(90deg, #00f7ff, #8a2be2);
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+
+  text-shadow:
+
+    0 0 10px #00f7ff,
+
+    0 0 20px #00f7ff,
+
+    0 0 40px #8a2be2;
+
+}
+
+#gallery {
+
+  width: 90%;
+
+  max-width: 1000px;
+
+  margin: 50px auto;
+
+  text-align: center;
+
+}
+
+#preview-container {
+
+  margin-top: 20px;
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+
+  gap: 20px;
+
+}
+
+.preview-img {
+
+  width: 100%;
+
+  border-radius: 15px;
+
+  box-shadow: 0 0 15px cyan;
+
+  transition: 0.3s;
+
+}
+
+.preview-img:hover {
+
+  transform: scale(1.05);
+
+  box-shadow: 0 0 25px cyan;
+
+}
+
+/* Custom Upload Button */
+
+.custom-upload {
+
+  display: inline-block;
+
+  padding: 25px;
+
+  border: 2px dashed #00bfff;
+
+  border-radius: 15px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+  background: rgba(0,191,255,0.1);
+
+}
+
+.custom-upload:hover {
+
+  background: #00bfff;
+
+  color: white;
+
+  transform: scale(1.05);
+
+}
+
+.upload-icon {
+
+  font-size: 40px;
+
+  display: block;
+
+  margin-bottom: 10px;
+
+} 
+
+header {
+  
+  padding:60px;
+
+  background: transparent;
+
+  backdrop-filter: none;
+
+  box-shadow: none;
+
+}
+  
+.hero {
+
+  width: 90%;
+
+  max-width: 900px;
+
+  margin: 60px auto;
+
+  padding: 60px 20px;
+
+  border-radius: 20px;
+
+  background: rgba(255,255,255,0.05);
+
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 0 40px rgba(0,255,255,0.2);
+
+}
+
+nav {
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  flex-wrap: nowrap;
+
+}
+  
+nav a{
+
+  margin:0 15px;
+
+  text-decoration:none;
+
+  color:cyan;
+
+  font-weight:bold;
+  
+}
+
+.card{
+
+  margin:50px auto;
+
+  padding:40px;
+
+  width:90%;
+
+  max-width:700px;
+
+  border-radius:25px;
+
+  background: rgba(255,255,255,0.07);
+
+  backdrop-filter: blur(15px);
+
+  box-shadow:0 0 25px rgba(0,255,255,0.3);
+
+  transition:0.3s;
+
+}
+
+.card:hover{
+
+  transform:translateY(-5px);
+
+}
+
+.gallery img{
+
+  width:150px;
+
+  margin:10px;
+
+  border-radius:20px;
+
+  transition:0.3s;
+
+}
+
+.gallery img:hover{
+
+  transform:scale(1.1);
+
+  box-shadow:0 0 20px cyan;
+
+}
+
+#gameArea{
+
+  position:relative;
+
+  height:250px;
+
+  margin-top:20px;
+
+}
+
+#box{
+
+  width:80px;
+
+  height:80px;
+
+  background:linear-gradient(45deg,#ff0055,#ff8800);
+
+  border-radius:20px;
+
+  position:absolute;
+
+  cursor:pointer;
+
+  box-shadow:0 0 20px #ff0055;
+
+  transition:0.2s;
+
+}
+
+button{
+
+  margin-top:15px;
+
+  padding:10px 20px;
+
+  border:none;
+
+  border-radius:15px;
+
+  background:linear-gradient(45deg,cyan,magenta);
+
+  color:white;
+
+  cursor:pointer;
+
+  font-weight:bold;
+
+}
+
+#contact {
+
+  text-align: center;
+
+  margin: 50px auto;
+
+  font-family: 'Orbitron', sans-serif;
+
+  color: #00ffff;
+
+}
+
+#contact h2 {
+
+  font-size: 40px;
+
+  margin-bottom: 20px;
+
+  text-shadow: 0 0 10px #00ffff;
+
+}
+
+#contact .social-text p {
+
+  font-size: 20px;
+
+  margin: 10px 0;
+
+}
+
+#contact .social-text a {
+
+  color: #00ffff;
+
+  text-decoration: none;
+
+  transition: 0.3s;
+
+}
+
+#contact .social-text a:hover {
+
+  color: white;
+
+  text-shadow: 0 0 10px cyan;
+
+}
+  
+footer{
+
+  padding:30px;
+
+  opacity:0.6;
+
+}
+
+#typing{
+
+  font-family: 'Orbitron', sans-serif;
+
+  font-size: 42px;
+
+  font-weight: 700;
+
+  background: linear-gradient(45deg, cyan, magenta, #00ff88);
+
+  background-size: 300%;
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+
+  animation: glowText 3s infinite alternate;
+
+  letter-spacing: 3px;
+
+}
+
+@keyframes glowText{
+
+  0%{
+
+    text-shadow: 0 0 10px cyan, 0 0 20px magenta;
+
+  }
+
+  100%{
+
+    text-shadow: 0 0 20px #00ff88, 0 0 40px cyan;
+
+}
